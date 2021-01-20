@@ -19,10 +19,10 @@ function App() {
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.key}>
-          <Route exact path='/' component={AboutUs} />
-          <Route exact path='/work' component={OurWork} />
-          <Route path='/work/:id' component={MovieDetail} />
-          <Route exact path='/contact' component={ContactUs} />
+          <Route exact path='/portfolio' component={AboutUs} />
+          <Route exact path='/portfolio/work' component={OurWork} />
+          <Route path='/portfolio/work/:id' component={MovieDetail} />
+          <Route exact path='/portfolio/contact' component={ContactUs} />
         </Switch>
       </AnimatePresence>
     </div>
